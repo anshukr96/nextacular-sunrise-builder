@@ -9,6 +9,7 @@ import ZeroCommission from "../components/ZeroCommission";
 import PopularDestinations from "../components/PopularDestinations";
 import BlogPosts from "../components/BlogPosts";
 import Footer from "../components/Footer";
+import TravelAndStayToday from "../components/TravelAndStayToday";
 
 const Index = () => {
   return (
@@ -17,6 +18,7 @@ const Index = () => {
       <Hero />
       <SpecialOffers />
       <PropertyTypes />
+      <TravelAndStayToday />
       <TrendingDestinations />
       <WeekendDeals />
       <BlogPosts />
