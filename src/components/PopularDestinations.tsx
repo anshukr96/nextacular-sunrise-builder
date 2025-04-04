@@ -6,6 +6,12 @@ import { useIsMobile } from "@/hooks/use-mobile";
 
 type TabType = "domestic" | "international" | "regions" | "countries" | "places";
 
+type CityLink = {
+  name: string;
+  link: string;
+  isShowMore?: boolean;
+};
+
 const PopularDestinations = () => {
   const [activeTab, setActiveTab] = useState<TabType>("domestic");
   const isMobile = useIsMobile();
@@ -16,25 +22,25 @@ const PopularDestinations = () => {
       { name: "Bangalore hotels", link: "#" },
       { name: "Mumbai hotels", link: "#" },
       { name: "Delhi hotels", link: "#" },
-    ],
+    ] as CityLink[],
     col2: [
       { name: "Goa hotels", link: "#" },
       { name: "Jaipur hotels", link: "#" },
       { name: "Udaipur hotels", link: "#" },
       { name: "Chennai hotels", link: "#" },
-    ],
+    ] as CityLink[],
     col3: [
       { name: "Manali hotels", link: "#" },
       { name: "Shimla hotels", link: "#" },
       { name: "Kolkata hotels", link: "#" },
       { name: "Pune hotels", link: "#" },
-    ],
+    ] as CityLink[],
     col4: [
       { name: "Hyderabad hotels", link: "#" },
       { name: "Kochi hotels", link: "#" },
       { name: "Agra hotels", link: "#" },
       { name: "Show more", link: "#", isShowMore: true },
-    ],
+    ] as CityLink[],
   };
 
   return (

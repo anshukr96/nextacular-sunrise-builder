@@ -19,9 +19,9 @@ const Index = () => {
       <PropertyTypes />
       <TrendingDestinations />
       <WeekendDeals />
+      <BlogPosts />
       <ZeroCommission />
       <PopularDestinations />
-      <BlogPosts />
       <Footer />
     </div>
   );
