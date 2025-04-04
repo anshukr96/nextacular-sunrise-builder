@@ -18,10 +18,10 @@ const Index = () => {
       <Hero />
       <SpecialOffers />
       <PropertyTypes />
-      <TravelAndStayToday />
       <TrendingDestinations />
       <WeekendDeals />
       <BlogPosts />
+      <TravelAndStayToday />
       <ZeroCommission />
       <PopularDestinations />
       <Footer />
